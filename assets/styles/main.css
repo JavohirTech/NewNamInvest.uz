@@ -1,4 +1,19 @@
-:root{
-    --main-dark-blue: #010131;
-    --main-light-blue: #1B518A;
+:root {
+  --main-dark-blue: #010131;
+  --main-light-blue: #1b518a;
+}
+
+.header_invest_logo {
+}
+
+@media screen and (max-width: 768px) {
+  .header_invest_logo {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header_invest_logo {
+    width: 200px;
+  }
 }
