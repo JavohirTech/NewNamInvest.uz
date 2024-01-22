@@ -14,6 +14,14 @@
       rel="stylesheet"
       href="https://kit-pro.fontawesome.com/releases/v6.5.1/css/pro.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
   <body>
@@ -21,12 +29,12 @@
       <img
         src="./assets/images/invest_logo.png"
         class="my-4"
-        width="400px"
+        width="30%"
         alt=""
       />
     </div>
     <nav
-      class="navbar navbar-expand-lg navbar-dark"
+      class="navbar navbar-expand-lg navbar-dark position-sticky top-0 z-3"
       style="background-color: var(--main-dark-blue)"
     >
       <div class="container">
@@ -98,28 +106,34 @@
     <div class="container">
       <div class="row my-4">
         <div class="col-md-3 text-center">
-          <div class="border rounded" style="color: var(--main-light-blue)">
+          <div
+            class="border rounded-3 mb-2"
+            style="
+              color: var(--main-light-blue);
+              border-color: var(--main-dark-blue) !important;
+            "
+          >
             <h4
               class="text-center py-3 rounded text-white"
               style="background-color: var(--main-dark-blue)"
             >
               Ishonch telefoni
             </h4>
-            <p class="fw-bold">Tuman hokimligini ishonch raqami</p>
+            <p class="fw-bold px-4">Tuman hokimligini ishonch raqami</p>
             <p class="text-center">
               <i class="fas fa-phone fa-2x"></i>
               <a class="fs-4" href="tel:+998990010000">+998(99) 001 00 00</a>
             </p>
-
-            <p class="fw-bold">
+            <hr />
+            <p class="fw-bold px-4">
               Tuman hokimligi Investitsiya bo'limi ishonch raqami
             </p>
             <p class="text-center">
               <i class="fas fa-phone fa-2x"></i>
               <a class="fs-4" href="tel:+998990010000">+998(99) 001 00 00</a>
             </p>
-
-            <p class="fw-bold">
+            <hr />
+            <p class="fw-bold px-4">
               Tuman hokimligi Soliq bo'limi ishonch raqami
             </p>
             <p class="text-center">
@@ -127,25 +141,335 @@
               <a class="fs-4" href="tel:+998990010000">+998(99) 001 00 00</a>
             </p>
           </div>
+
+          <div
+            class="border rounded-3 mb-2"
+            style="border-color: var(--main-dark-blue) !important"
+          >
+            <h4
+              class="text-center py-2 rounded text-white"
+              style="background-color: var(--main-dark-blue)"
+            >
+              Yil nomi
+            </h4>
+            <p class="fs-4 px-3">
+              2024 - "Yoshlar va biznesni qo'llab-quvvatlash yili"
+            </p>
+            <!-- <marquee width="100%" direction="right" height="100px">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, dicta unde. Quo consequatur eaque nostrum quibusdam fugiat laborum rerum unde facilis modi, quas saepe cum pariatur, vitae, autem quia corrupti?</p>
+            </marquee> -->
+          </div>
         </div>
-        <div class="col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            vel unde error magni quis? Veniam, illo ea eveniet explicabo atque
-            nulla voluptates corrupti ab rerum adipisci consequuntur, impedit
-            esse natus!
-          </p>
+
+        <div class="col-md-6">
+          <div class="border rounded-3 px-4">
+            <div class="news__card my-2">
+              <span class="text-secondary"
+                ><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                <time>10 yanvar 2024</time></span
+              >
+              <h3>
+                <a href="#" style="color: var(--main-light-blue)"
+                  >Lorem ipsum dolor sit amet.</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                repellat nam non voluptate totam. Sunt, sint omnis nihil iure
+                possimus est saepe facere explicabo dolore natus aspernatur
+                ratione cum quibusdam?
+              </p>
+            </div>
+            <hr />
+            <div class="news__card my-2">
+              <span class="text-secondary"
+                ><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                <time>10 yanvar 2024</time></span
+              >
+              <h3>
+                <a href="#" style="color: var(--main-light-blue)"
+                  >Lorem ipsum dolor sit amet.</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                repellat nam non voluptate totam. Sunt, sint omnis nihil iure
+                possimus est saepe facere explicabo dolore natus aspernatur
+                ratione cum quibusdam?
+              </p>
+            </div>
+            <hr />
+            <div class="news__card my-2">
+              <span class="text-secondary"
+                ><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                <time>10 yanvar 2024</time></span
+              >
+              <h3>
+                <a href="#" style="color: var(--main-light-blue)"
+                  >Lorem ipsum dolor sit amet.</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                repellat nam non voluptate totam. Sunt, sint omnis nihil iure
+                possimus est saepe facere explicabo dolore natus aspernatur
+                ratione cum quibusdam?
+              </p>
+            </div>
+            <hr />
+            <div class="news__card my-2">
+              <span class="text-secondary"
+                ><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                <time>10 yanvar 2024</time></span
+              >
+              <h3>
+                <a href="#" style="color: var(--main-light-blue)"
+                  >Lorem ipsum dolor sit amet.</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                repellat nam non voluptate totam. Sunt, sint omnis nihil iure
+                possimus est saepe facere explicabo dolore natus aspernatur
+                ratione cum quibusdam?
+              </p>
+            </div>
+            <hr />
+            <div class="news__card my-2">
+              <span class="text-secondary"
+                ><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                <time>10 yanvar 2024</time></span
+              >
+              <h3>
+                <a href="#" style="color: var(--main-light-blue)"
+                  >Lorem ipsum dolor sit amet.</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                repellat nam non voluptate totam. Sunt, sint omnis nihil iure
+                possimus est saepe facere explicabo dolore natus aspernatur
+                ratione cum quibusdam?
+              </p>
+            </div>
+            <hr />
+            <div class="news__card my-2">
+              <span class="text-secondary"
+                ><i class="fa-sharp fa-solid fa-calendar-days"></i>
+                <time>10 yanvar 2024</time></span
+              >
+              <h3>
+                <a href="#" style="color: var(--main-light-blue)"
+                  >Lorem ipsum dolor sit amet.</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                repellat nam non voluptate totam. Sunt, sint omnis nihil iure
+                possimus est saepe facere explicabo dolore natus aspernatur
+                ratione cum quibusdam?
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="col-md-3">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
-            magnam eos officia accusantium eaque atque repudiandae neque quia
-            impedit iste obcaecati quis nisi quisquam harum aliquid quibusdam
-            nihil autem modi?
-          </p>
+          <a href="./pages/uz/tadbirkorlar-murojaati.html">
+            <div class="border rounded text-center mb-2">
+              <img
+                src="./assets/images/capital-investment.webp"
+                class="rounded"
+                width="100%"
+                alt=""
+              />
+              <h5 class="py-2 fw-bold" style="color: var(--main-light-blue)">
+                Hoziroq investitsiya kiriting!
+              </h5>
+            </div>
+          </a>
+
+          <div
+            class="border rounded-3 text-center mb-2"
+            style="border-color: var(--main-dark-blue) !important"
+          >
+            <h4
+              class="text-center py-2 rounded text-white"
+              style="background-color: var(--main-dark-blue)"
+            >
+              Hokimlik manzillari
+            </h4>
+            <div class="px-3 pb-3 text-start">
+              <b>160100, Yangi Namangan tumani</b><br />
+              <b>Amir Temur ko'chasi, 101-uy</b><br />
+              <b>Mo'ljal: IT Park</b><br />
+              <b>Tel: (69) 001 00 00</b><br />
+              <b>Tel: (69) 001 00 00</b><br />
+              <b
+                >E-mail:
+                <a href="mailto:yanginamangan@gmail.com"
+                  >yanginamangan@gmail.com</a
+                ></b
+              ><br />
+              <b>Ish vaqti: Dushanba-Shanba</b><br />
+              <b>09:00-18:00 gacha</b><br />
+              <b>Tushlik: 13:00-14:00 gacha</b><br />
+            </div>
+          </div>
+          <div
+            class="border rounded-3 text-center mb-2"
+            style="border-color: var(--main-dark-blue) !important"
+          >
+            <h4
+              class="text-center py-2 rounded text-white"
+              style="background-color: var(--main-dark-blue)"
+            >
+              Tuman xaritasi
+            </h4>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12039.424213603072!2d71.6380584!3d41.0284051!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb4b7429d2d94d%3A0xc98c45e079f30d6f!2sYangi%20Namangan%20tuman%20hokimligi!5e0!3m2!1suz!2s!4v1705956061613!5m2!1suz!2s"
+              width="100%"
+              height="300px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              title="Yangi Namangan hokimligi"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="border rounded text-center mb-2">
+            <h3 class="py-2">Tadbirkor murojaati</h3>
+          </div>
+        </div>
+
+        <div class="my-4">
+          <h3
+            class="text-center my-4 fw-bold"
+            style="color: var(--main-light-blue)"
+          >
+            Foydali manzillar
+          </h3>
+          <div class="owl-carousel">
+            <div>
+              <a href="https://parliament.gov.uz/"
+                ><img
+                  src="https://namangan.uz/images/site/linkUz/link3-UZ.png"
+                  alt=""
+              /></a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="https://namangan.uz/images/site/linkUz/link1-UZ.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="https://namangan.uz/images/site/linkUz/link4-UZ.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href=""
+                ><img
+                  src="https://namangan.uz/images/site/linkUz/link2-UZ.png"
+                  alt=""
+              /></a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="https://namangan.uz/images/site/linkUz/link5-UZ.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="https://namangan.uz/images/site/linkUz/link6-UZ.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="https://namangan.uz/images/site/linkUz/link7-UZ.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="https://namangan.uz/images/file/e-qaror.jpg" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <footer style="background-color: var(--main-dark-blue)">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-3 d-flex align-items-center">
+            <img
+              src="./assets/images/hokimlik_logo_dark.png"
+              width="100%"
+              class="p-5"
+              alt="Yangi Namangan tumani hokimligi logo"
+            />
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>
+                <a href="#" class="text-white"
+                  >Yangi Namangan tumani xaritasi</a
+                >
+              </li>
+              <li><a href="#" class="text-white">Umumiy ma'lumot</a></li>
+              <li><a href="#" class="text-white">Tashkiliy tuzilma</a></li>
+              <li><a href="#" class="text-white">Investitsiya</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>
+                <a href="#" class="text-white">Yangi Namangan tumani hokimi</a>
+              </li>
+              <li><a href="#" class="text-white">Hokimlik aloqa</a></li>
+              <li>
+                <a href="#" class="text-white">Investitsiya uchun bog'lanish</a>
+              </li>
+              <li><a href="#" class="text-white">Yangi Namangan</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>
+                <a href="#" class="text-white"
+                  >Yangi Namangan tumani xaritasi</a
+                >
+              </li>
+              <li><a href="#" class="text-white">Umumiy ma'lumot</a></li>
+              <li><a href="#" class="text-white">Tashkiliy tuzilma</a></li>
+              <li><a href="#" class="text-white">Investitsiya</a></li>
+            </ul>
+          </div>
+          <hr class="text-white opacity-50 mt-5" />
+          <p class="text-white text-center">
+            <a href="https://fazo.dev" class="text-decoration-none"
+              >FAZO SOFTWARE SERVICE &copy;</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -157,5 +481,31 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 5,
+          loop: true,
+          margin: 10,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+          autoplay: true, // Enable auto-play
+          autoplayTimeout: 3000, // Set the auto-play timeout in milliseconds (e.g., 3000ms = 3 seconds)
+          autoplayHoverPause: true,
+        });
+      });
+    </script>
   </body>
 </html>
