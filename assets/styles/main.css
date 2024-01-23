@@ -3,14 +3,27 @@
   --main-light-blue: #1b518a;
 }
 
-.header_invest_logo {
-}
 
 @media screen and (max-width: 768px) {
   .header_invest_logo {
     width: 200px;
   }
+
+  .languages_text a {
+    font-size: 20px !important;
+    color: red !important;
+  }
+
+  .president_text{
+    padding: 0!important;
+  }
+
+  .president_text h2 {
+    font-size: 10px !important;
+  }
 }
+
+
 
 @media (min-width: 1024px) {
   .header_invest_logo {
@@ -18,14 +31,15 @@
   }
 }
 
-*{
+* {
   /* border: 1px solid red; */
   /* color: white; */
 }
 
-body{
+body {
   /* background-image: url("https://fonoteka.top/uploads/posts/2022-01/1642654535_55-phonoteka-org-p-fon-dlya-prezentatsii-finansi-56.jpg"); */
   background-image: url("../../1642654535_55-phonoteka-org-p-fon-dlya-prezentatsii-finansi-56\ 1\(1\).png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
