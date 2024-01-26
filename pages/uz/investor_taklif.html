@@ -2,13 +2,427 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yangi Namangan Invest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.5.1/css/pro.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../../assets/styles/main.css" />
 </head>
 
 <body>
-    investorlarga taklif
+    <div class="container text-center">
+        <img src="../../assets/images/savdo_bulimi_logo (2).png" class="my-4 header_invest_logo img-fluid"
+            style="width: 800px !important" alt="Yangi Namangan investitsiya logo" />
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark position-sticky top-0 z-3 fw-bold text-uppercase"
+        style="background-color: var(--main-dark-blue)">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="./index.html">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./tuman_haqida.html">Tuman haqida</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            TUMAN ko'rsatgichlari
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./eksport_kursatgich.html">eksport ko'rsatgichlari</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./uzlashtirilgan_investitsiya.html">o'zlashtirilgan
+                                    investitsiyalar</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./ishlab_chiqarish.html">Ishlab chiqarish</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./investor_taklif.html">investorlarga taklif</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./investor_imkoniyat.html">investorlarga imkoniyatlar</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Til almashtirish
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">O'zbek</a></li>
+                            <li><a class="dropdown-item" href="#">Russian</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-md-3 text-center">
+                <div class="border rounded-3 mb-2" style="
+              color: #fff !important;
+              border-color: var(--main-dark-blue) !important;
+            ">
+                    <h4 class="text-center py-3 rounded text-white" style="background-color: var(--main-dark-blue)">
+                        Ishonch telefoni
+                    </h4>
+                    <p class="fw-bold px-4">Investitsiya bo'limi ishonch raqami</p>
+                    <p class="text-center">
+                        <i class="fas fa-phone fa-2x"></i>
+                        <a class="fs-4 text-white" href="tel:+998692260052">(69) 226 00 52</a>
+                    </p>
+                    <hr />
+
+                    <p class="fw-bold px-4">Yangi Namangan KPP bo'limi</p>
+                    <p class="text-center">
+                        <i class="fas fa-phone fa-2x"></i>
+                        <a class="fs-4 text-white" href="tel:+998692260054">+998(69) 226 00 54</a>
+                    </p>
+                    <hr />
+
+                    <p class="fw-bold px-4">Yangi Namangan soliq bo'limi</p>
+                    <p class="text-center">
+                        <i class="fas fa-phone fa-2x"></i>
+                        <a class="fs-4 text-white" href="tel:+998970500803">+998(97) 050 08 03</a>
+                    </p>
+                </div>
+
+                <div class="border rounded-3 mb-2" style="border-color: var(--main-dark-blue) !important">
+                    <h4 class="text-center py-2 rounded text-white" style="background-color: var(--main-dark-blue)">
+                        Yil nomi
+                    </h4>
+                    <p class="fs-4 text-white px-3 lh-1">
+                        2024 - "Yoshlar va biznesni qo'llab-quvvatlash yili"
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="border rounded-3 px-4" style="background-color: rgba(255, 255, 255, 0.9)">
+                    <h4 class="my-3 fw-bold">INVESTORLARGA TAKLIF</h4>
+                    <h5 class="fw-bold">1) Mebelchilik sanoati</h5>
+                    <p> Yangi Namangan tumanida mebelchilik sohasi keng rivojlangan yo‘nalishlardan biri hisoblanadi.
+                        Birgina ushbu yo‘nalishda hozirgi kunda <b>220 dan ortiq tadbirkorlar</b> faoliyat ko‘rsatib
+                        kelmoqda.
+                        Mebelchi tadbirkorlar tomonidan ishlab chiqarilgan, eshik va romlar, yotoqhona, mehmonxona va
+                        oshxona mebellari, stol stullar, yog‘och kravatlar Respublikamiz bozorlarida alohida o‘rin
+                        tutadi.
+                        Qolaversa yirik mebelchi tadbirkorlar <b>“SARKOR-PREMUM”</b>, <b>“PRESTIJ”</b> hamda <b>“VODIY
+                            MEBEL
+                            BREND”</b>
+                        korxonalari tomonidan ishlab chiqarilgan mahsulotlar qo‘shni davlatlar <b>Rossiya, Qozog‘iston
+                            Qirg‘iziston va boshqa MDH davlatlari hamda Yevropa davlatlariga</b> ham eksport qilinmoqda.
+                    </p>
+
+                    <p>Ilg‘or tadbirkorlar o‘z mutaxasislarini mebelchilik rivojlangan <b>Germaniya, Rossiya va
+                            Turkiya</b>
+                        kabi
+                        davlatlarida malakalarini oshirib kelishlari natijasida o‘zimizninng milliyligimiz uyg‘unlashgan
+                        zamonaviy maxsulotlar ishlab chiqarilishiga zamin yaratmoqda.</p>
+
+                    <p>Ushbu soha serdaromadligi bilan bir qatorda fuqarolarning ish bilan ta’minlanishida ham alohida
+                        o‘rin tutadi. Tumanda mebelchilik rivojlangan Sohil, Kejak tongi, Istiqbol mahallalari
+                        aholisining
+                        asosiy mehnat faoliyati va daromadini mebelchilik tashkil etadi.</p>
+                    <p>Mebelchilik yo‘nalishi hozirda jadal rivojlanayotgan bo‘lib, tadbirkorlarning talablaridan kelib
+                        chiqqan holda tumanning <b>“Soxil”</b> mahallasi xudida joylashgan Respublikada yagona bo‘lgan
+                        Mebelchilikka ixtisoslashgan <b>“Taraqqiyot”</b> kichik sanoat zonasi tashkil etish bo‘yicha
+                        hukumat
+                        qarori
+                        tasdiqlandi.</p>
+
+                    Mazkur <b>KSZ 10 gektar yer</b> maydoniga ega bo‘lib <b>2023-2024 yillar</b>
+                    davomida
+                    umumiy
+                    qiymati
+                    <b>437.3 mlrd so‘mlik mebelchilikka</b> ixtisoslashgan <b>37 ta korxona</b> tashkil etiladi. Ushbu
+                    loyixalar
+                    orqali <b>4 000 nafar yangi</b> ish o‘rinlari yaratilishi rejalashtirilgan.
+
+                    <h5 class="fw-bold my-2">2) Uzumchilik</h5>
+                    <p>Tumanning <b>“Bunyodkor”</b> hamda <b>“Mustaqillikning besh yilligi”</b> mahallalari hududida
+                        yashovchi aholi
+                        qadimdan uzumchilik faoliyati bilan shug‘ullanib kelgan. Mahalla aholisi uzum yetishtirish
+                        bo‘yicha
+                        yetarli darajada ko‘nikmalarga ega hisoblanadi.</p>
+
+                    <p>Muhtaram <b>Prezidentimiz M.Mirziyoyev</b>ning <b>“Maxallabay”</b> ishlash tizimini joriy
+                        qiganlaridan
+                        so‘ng ushbu
+                        mahallalardagi har bir honadon o‘rganilib, mahallaning <b>“drayveri”</b> sifatida uzumchilik
+                        tanlab
+                        olindi.
+                        Hozirgi kunda mahallada <b>1 220 ta xonadon</b> mavjud. Bularning qariyb <b>1 000 dan ortig‘ida
+                            3
+                            sotixdan 6
+                            sotixgacha ekin maydoni</b> bo‘lib, ushbu honadonlarga mahalliy va <b> Marg‘ilondan </b>
+                        uzum
+                        yetishtiruvchi
+                        bog‘bonlar tavsiyalari yordamida suritoklar o‘rnatish ishlari amalga oshirildi.</p>
+
+                    <p>Aholining talab va istaklaridan kelib chiqib, hamda <b>“Temir daftar”</b>dagi va mahallaning
+                        ishsiz
+                        aholisiga imtiyozli kredit asosida hamda <b>“Saxovat va ko‘mak”</b> umumxalq harakati yordamida
+                        mablag‘lar
+                        yo‘naltirilib, <b>870 ta</b> honadonlarga Suritok o‘rnatish hamda uzum ko‘chatlari ekish ishlari
+                        amalga
+                        oshirildi.</p>
+
+                    <p>Bundan tashqari <b>“Bunyodkor”</b> mahallasida uzumchilik va bog‘dorchilikni o‘rgatadigan
+                        monomarkaz
+                        tashkil qilinib, maktab bitiruvchilari va mahalladagi ishsiz fuqarolar uzumchilikka
+                        ixtisoslashgan
+                        tayyor kadr bo‘lib yetishadi.</p>
+
+                    <p>Hisob-kitoblarga qaraydigan bo‘lsak:
+                        <b>1 sotix</b> maydonga uzumchilik tashkil etish uchun <b>2 mln. 500 ming so‘m mablag‘</b>
+                        sarflanadi. Bu
+                        degani
+                        bir honadonga o‘rtacha <b>7,5-10 mln. so‘mga</b> to‘g‘ri keladi.</p>
+
+                    <p>Uchinchi yildan boshlab har bir honadon <b>900 kg</b> dan uzum yetishtirib oladi va <b>18 mln.
+                            dan
+                            daromad</b>
+                        qila boshlaydi. Shuningdek, yildan yilga hosildorlik ko‘payib borishini hisobga olsak <b>20 mln.
+                            so‘mdan 40 mln. so‘mgacha daromad</b> keltiradi.</p>
+
+                    <p> Bundan tashqari har bir honadonda kamida bir kishi uzumchilik faoliyati bilan band deb
+                        hisoblaydigan
+                        bo‘lsak, birgina Bunyodkor mahallasining sal kam <b>2 mingga yaqin aholisi</b> doimiy ish bilan
+                        bandligi
+                        ta’minlanadi.</p>
+
+
+                    <h5 class="fw-bold my-2">3) Xizmat ko‘rsatish</h5>
+                    <p>Joriy yilningb
+                        <b> 6 oy yakuni</b> bilan tumanda xizmatlar hajmining o‘sish sur’ati <b>117,4 foizni yoki 545,1
+                            mlrd.so‘mni</b> tashkil etib, aholi jon boshiga <b>3 482,9 ming so‘mga</b> yoki o‘tgan
+                        yilning
+                        shu
+                        davriga
+                        nisbatan <b>114,5 foizga</b> o‘sishiga erishildi. Tumanning xizmatlar sohasining rivojlanishida
+                        <b>“Chortoq
+                            shimoliy aylanma yo‘li”</b> alohida o‘rin tutadi.</p>
+                    <p> Hozirgi kunda ushbu hududda jami <b>526 ta xizmat ko‘rsatish ob’yektlarida 7010 nafar</b>
+                        fuqarolarni
+                        bandligi ta’minlangan, jumladan:</p>
+                    <ul>
+                        <li>6 ta nodavlat maktabgacha ta’lim muassasalarida 205 nafar ;
+                        </li>
+                        <li>5 ta nodavlat tibbiyot muassasalarida 495 nafar,5 ta yirik savdo majmualarida 317 nafar;
+                        </li>
+                        <li>150 ta chakana savdo ko‘rsatish ob’yektlarida 2283 nafar;
+                        </li>
+                        <li> 55 ta umumiy ovqatlanish ob’yektlarida 1778 nafar;
+                        </li>
+                        <li>305 ta maishiy xizmat ko‘rsatish ob’yektlarida 1922 nafar (sartaroshxona va
+                            go‘zallik
+                            saloni,
+                            etikdo‘zlik va b.);</li>
+                    </ul>
+                    <p>Bundan tashqari yil yakuniga qadar ushbu xududda 38 ta xizmat ko‘rsatish loyihalari foydalanishga
+                        topshirish orqali jami 400 dan ortiq aholini bandligini ta’minlash ko‘zda tutilgan.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 my-3">
+                <a href="./tadbirkor_murojaati.html" class="text-decoration-none">
+                    <div class="border rounded text-center mb-2">
+                        <img src="../../assets/images/capital-investment.webp" class="rounded" width="100%" alt="" />
+                        <h5 class="py-2 fw-bold" style="color: #fff">
+                            Hoziroq investitsiya kiriting!
+                        </h5>
+                    </div>
+                </a>
+
+                <div class="border rounded-3 text-center mb-2" style="border-color: var(--main-dark-blue) !important">
+                    <h4 class="text-center py-2 rounded text-white" style="background-color: var(--main-dark-blue)">
+                        Bo'lim manzili
+                    </h4>
+                    <div class="px-3 pb-3 text-start text-white">
+                        <b>Yangi Namangan tumani, Afrosiyob koʻchasi 25 B uy</b><br />
+                        <span><b>Moʻljal: </b>Namangan viloyati onkologiya kasalxonasidan
+                            oʻtgan keyin</span><br />
+                        <span><b>Tel: </b>(69) 226 00 52 Investitsiya boʻlimi</span><br />
+                        <span><b>Tel: </b>(69) 226 00 54 KPP</span><br />
+                        <span><b>Tel: </b>(97) 050 08 03 Soliq bo'limi</span><br />
+                        <span><b>Ish vaqti: </b>Dushanba-Shanba 09:00-18:00 gacha</span><br />
+                        <span><b>Tushlik: </b>13:00-14:00 gacha</span><br />
+                    </div>
+                </div>
+
+                <div class="border rounded-3 text-center mb-2" style="border-color: var(--main-dark-blue) !important">
+                    <h4 class="text-center py-2 rounded text-white" style="background-color: var(--main-dark-blue)">
+                        Tuman xaritasi
+                    </h4>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12039.424213603072!2d71.6380584!3d41.0284051!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb4b7429d2d94d%3A0xc98c45e079f30d6f!2sYangi%20Namangan%20tuman%20hokimligi!5e0!3m2!1suz!2s!4v1705956061613!5m2!1suz!2s"
+                        width="100%" height="300px" style="border: 0" allowfullscreen="" loading="lazy"
+                        title="Yangi Namangan hokimligi" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="my-4">
+                <h3 class="text-center my-4 fw-bold text-white">Foydali manzillar</h3>
+                <div class="owl-carousel">
+                    <div>
+                        <a href="https://parliament.gov.uz/"><img
+                                src="https://namangan.uz/images/site/linkUz/link3-UZ.png" alt="" /></a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="https://namangan.uz/images/site/linkUz/link1-UZ.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="https://namangan.uz/images/site/linkUz/link4-UZ.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://namangan.uz/images/site/linkUz/link2-UZ.png" alt="" /></a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="https://namangan.uz/images/site/linkUz/link5-UZ.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="https://namangan.uz/images/site/linkUz/link6-UZ.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="https://namangan.uz/images/site/linkUz/link7-UZ.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="https://namangan.uz/images/file/e-qaror.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: var(--main-dark-blue)">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-3 d-flex align-items-center">
+                    <img src="../../assets/images/hokimlik_logo_dark.png" width="100%" class="p-5"
+                        alt="Yangi Namangan tumani hokimligi logo" />
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>
+                            <a href="https://yandex.uz/maps/-/CDuXyDmM" class="text-white">Yangi Namangan tumani
+                                xaritasi</a>
+                        </li>
+                        <li>
+                            <a href="./tuman_haqida.html" class="text-white">Tuman haqida</a>
+                        </li>
+                        <li>
+                            <a href="./eksport_kursatgich.html" class="text-white">Eksport ko'rsatgichlari</a>
+                        </li>
+                        <li>
+                            <a href="./uzlashtirilgan_investitsiya.html" class="text-white">O'zlashtirilgan
+                                investitsiyalar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>
+                            <a href="./ishlab_chiqarish.html" class="text-white">Ishlab chiqarish</a>
+                        </li>
+                        <li>
+                            <a href="./investor_taklif.html" class="text-white">Investorlarga taklif</a>
+                        </li>
+                        <li>
+                            <a href="./investor_imkoniyat.html" class="text-white">Investorlarga imkoniyatlar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white">Foydali havolalar</h5>
+                    <ul>
+                        <li>
+                            <a href="https://my.gov.uz/" class="text-white">Elektron hukumat</a>
+                        </li>
+                        <li>
+                            <a href="https://president.uz/" class="text-white">President.uz</a>
+                        </li>
+                        <li><a href="https://lex.uz/" class="text-white">Lex.uz</a></li>
+                    </ul>
+                </div>
+                <hr class="text-white opacity-50" />
+                <p class="text-white text-center">
+                    <a href="https://fazo.dev" class="text-decoration-none">FAZO SOFTWARE SERVICE &copy;</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 5,
+                loop: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 5,
+                    },
+                },
+                autoplay: true, // Enable auto-play
+                autoplayTimeout: 3000, // Set the auto-play timeout in milliseconds (e.g., 3000ms = 3 seconds)
+                autoplayHoverPause: true,
+            });
+        });
+    </script>
 </body>
 
 </html>
