@@ -324,6 +324,28 @@
       });
     });
   </script>
+
+  <script>
+    $(document).ready(function () {
+      $("form").submit(function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        $.ajax({
+          type: "POST",
+          url: "tadbirkor_murojaati.php",
+          data: new FormData(this),
+          contentType: false,
+          cache: false,
+          processData: false,
+          success: function (response) {
+            // Handle the response
+            console.log(response);
+          },
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
