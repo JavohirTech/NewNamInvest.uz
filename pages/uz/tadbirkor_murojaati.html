@@ -127,7 +127,7 @@
             O'zingizni investitsion rejangizni yuboring!
           </h4>
           <div class="rounded border p-4">
-            <form action="./tadbirkor_murojaati.php" method="post" enctype="multipart/form-data">
+            <form enctype="multipart/form-data" id="myForm">
               <div class="mb-3">
                 <label for="name" class="form-label">F.I.O</label>
                 <input type="text" class="form-control" id="name" placeholder="To'liq ism familiyangizni kiriting" />
@@ -300,7 +300,7 @@
   </script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
     $(document).ready(function () {
       $(".owl-carousel").owlCarousel({
@@ -325,27 +325,75 @@
     });
   </script>
 
-  <script>
-    $(document).ready(function () {
-      $("form").submit(function (e) {
-        e.preventDefault(); // Prevent the default form submission
 
-        $.ajax({
-          type: "POST",
-          url: "tadbirkor_murojaati.php",
-          data: new FormData(this),
-          contentType: false,
-          cache: false,
-          processData: false,
-          success: function (response) {
-            // Handle the response
-            console.log(response);
-          },
-        });
-      });
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Get each input element within the form
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const phoneInput = document.getElementById('phone');
+      const addressInput = document.getElementById('address');
+      const messageInput = document.getElementById('message');
+      const fileInput = document.getElementById('file');
+
+      // Create variables and assign input values
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const phone = phoneInput.value;
+      const address = addressInput.value;
+      const message = messageInput.value;
+      const file = fileInput.files[0];
+
+      // Create a FileReader instance
+      const reader = new FileReader();
+
+      // Define a function to handle the file reading process
+      reader.onload = function (e) {
+        // The result attribute contains the data as a data URL
+        const fileContent = e.target.result;
+
+        // Perform actions with the file content, for example, send it along with other form data
+        // Here you can include fileContent in the email or do any other processing
+
+        (function () {
+          emailjs.init("ZXfT1Av8LZrveU4TC")
+        })()
+
+        var params = {
+          sendername: name,
+          to: "starkcoders@gmail.com",
+          subject: message,
+          message: message,
+          file: fileContent, // Pass the file content instead of the file object
+          email: email,
+          phone: phone,
+          address: address
+        }
+
+        var serviceID = "service_e4uckmq"
+        var templateID = "template_ky2hj5k"
+
+        emailjs.send(serviceID, templateID, params)
+          .then(res => {
+            console.log("sent");
+          }).catch(err => {
+            console.log(err);
+          })
+
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Phone:', phone);
+        console.log('Address:', address);
+        console.log('Message:', message);
+        console.log('File Content:', fileContent); // Log the file content instead of the file object
+      };
+
+      // Read the file as text. You can adjust this based on your file type and reading requirements.
+      reader.readAsText(file);
     });
   </script>
-
 </body>
 
 </html>
